@@ -1,15 +1,16 @@
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.Test;
+import java.util.*;
 
 public class MainTest {
+    public static void main(String[] args) {
+        String s1 = "TSET";
 
-    @Test
-    void testSum() {
-        assertEquals(5, Main.sum(2, 3));
-    }
+        for (
+                int i = s1.length() - 1;
+                i >= 0; i--) {
+            System.out.print(s1.charAt(i));
+        }
 
-    @Test
-    void testNegative() {
-        assertEquals(-1, Main.sum(2, -3));
+        System.out.println("");
+        System.out.println(s1);
     }
 }
